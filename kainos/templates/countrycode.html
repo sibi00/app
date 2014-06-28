@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+            <title>Official languages of countries </title>
+        <script src="http://d3js.org/d3.v3.min.js"></script>
+
+        <staticContent>
+            <mimeMap fileExtension=".json" mimeType="application/json" />
+        </staticContent>
+
+    </head>
+<body>
+    <div>
+        <h1>Official languages of countries</h1>
+    </div>
+
+            <table border="5">
+             <thead>
+              <tr>
+                 <th>Continent</th><th>Country</th>
+              </tr>
+             </thead>
+                 <tbody>
+                {% for k in kraje %}
+                    <tr>
+                        <td>{{ k.countrycode }}</td><td>{{ k.language }}</td><td>{{ k.percentage }}</td>
+                    </tr>
+                {% endfor %}
+             </tbody>
+             <tfoot>
+              <tr>
+                 <td>KONIEC</td>
+              </tr>
+             </tfoot>
+            </table>
+
+    <div id='canvas'>
+
+
+ <script>
+    d3.json("../DZA.json",function(data){
+        dane=data;
+    })
+</script>
+</div>
+
+    <div>
+        <a href="/countries">Countries</a>
+        <a href="/groupedCountries">Languages by Numbers</a>
+    </div>
+</body>
+</html>

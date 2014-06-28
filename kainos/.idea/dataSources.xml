@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="2430566695">
+    <data-source source="LOCAL" name="Kainos" read-only="true" uuid="3a8b2f80-4b0d-449f-b0a3-8fab344e2d2f">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://ec2-54-225-101-124.compute-1.amazonaws.com:5432/ddehqcgsacci3g&amp;ssl=true</jdbc-url>
+      <user-name>mmmwsvrkwfstit</user-name>
+      <user-password>dfdcdfc6dfc6dfc3dfecdfdbdfc3dfc6dfe8dfe5dfffdffcdfd3dffddffcdff3df87dfecdff0dfccdffcdf9fdf9adffddfcbdf99</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Django default" uuid="9170f1ec-2f40-4591-b8f6-2a7b2e417557">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/kainos2</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfc7dfcbdfc4dfc3dfcfdfc1df92df93</user-password>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+

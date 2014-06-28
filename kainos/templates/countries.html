@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+            <title>Official languages of countries</title>
+    </head>
+<body>
+    <div>
+        <h1>Official languages of countries</h1>
+    </div>
+
+            <table border="5">
+             <thead>
+              <tr>
+                 <th>Continent</th><th>Country</th>
+              </tr>
+             </thead>
+                 <tbody>
+                {% for k in kraje %}
+                    <tr>
+                        <td>{{ k.continent }}</td><td>{{ k.name }}</td><td>{{ k.language }}</td><td>{{ k.population }}</td><td>{{ k.isofficial }}</td><td>{{ k.percentage}}</td><td>{{ k.code}}</td><td><a href="/country/{{ k.code }}">Details</a></td>
+                    </tr>
+                {% endfor %}
+             </tbody>
+             <tfoot>
+              <tr>
+                 <td>KONIEC</td>
+              </tr>
+             </tfoot>
+            </table>
+
+
+
+
+    <div>
+        <a href="/countries">Countries</a>
+        <a href="/groupedCountries">Languages by Numbers</a>
+    </div>
+</body>
+</html>
